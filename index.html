@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header"></div>
+
+    <div class="calendar-wrapper">
+      <!-- 📅 Calendar Section -->
+      <div class="calendar-section">
+        <div class="calendar-nav">
+          <button onclick="prevMonth()">←</button>
+          <h3 id="monthYear"></h3>
+          <button onclick="nextMonth()">→</button>
+        </div>
+        <div class="calendar" id="calendar"></div>
+      </div>
+
+      <!-- 📝 Event Panel -->
+      <div class="event-panel">
+        <h3>📌 Events on <span id="selectedDateLabel">Select a date</span></h3>
+        <input type="text" id="eventInput" placeholder="Enter title..." />
+        <input type="text" id="eventTime" placeholder="Enter time (e.g., 14:00)" />
+        <input type="text" id="eventDuration" placeholder="Enter duration (e.g., 2h)" />
+        <button onclick="addEvent()">Add Event</button>
+
+        <div class="all-events-section">
+          <h4>🗓️ All Events for the Day</h4>
+          <ul id="allEventsList"></ul>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <script src="app.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Calendar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="header">
+      
+    </div>
+
+    <div class="calendar-nav">
+      <button onclick="prevMonth()">←</button>
+      <h3 id="monthYear">March 2022</h3>
+      <button onclick="nextMonth()">→</button>
+    </div>
+
+    <div class="calendar" id="calendar">
+     
+    </div>
+
+    <div class="location">📍 34 West 15th Street, NY</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html> -->
